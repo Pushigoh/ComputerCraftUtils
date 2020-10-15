@@ -4,21 +4,23 @@ function Land()
 	end
 end
 function Move(direction, amount)
-	if direction is "up" or "u" then
+	print(direction)
+	print(amount)
+	if direction == "up" or direction == "u" then
 		for i=1,amount do
 			turtle.up()
 		end
-	elseif direction is "down" or "d" then
+	elseif direction == "down" or direction == "d" then
 		for i=1,amount do
 			turtle.down()
 		end
-	elseif direction is "right" or "r" then
+	elseif direction == "right" or direction == "r" then
 		turtle.turnRight()
 		for i=1,amount do
 			turtle.forward()
 		end
 		turtle.turnLeft()
-	elseif direction is "left" or "l" then
+	elseif direction == "left" or direction == "l" then
 		turtle.turnLeft()
 		for i=1,amount do
 			turtle.forward()
