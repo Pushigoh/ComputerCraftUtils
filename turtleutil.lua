@@ -26,6 +26,14 @@ function Move(direction, amount)
 			turtle.forward()
 		end
 		turtle.turnRight()
+	elseif direction == "forward" or direction == "f" then
+		for i=1,amount do
+			turtle.forward()
+		end
+	elseif direction == "back" or direction == "b" then
+		for i=1,amount do
+			turtle.back()
+		end
 	else
 		print("What direction?")
 	end
