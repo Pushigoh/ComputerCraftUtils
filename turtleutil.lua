@@ -3,6 +3,13 @@ function Land()
 		turtle.down()
 	end
 end
+function ChopTree()
+	while turtle.detectUp() do
+		turtle.dig()
+		turtle.digUp()
+		turtle.up()
+	end
+end
 function Move(direction, amount)
 	print(direction)
 	print(amount)
