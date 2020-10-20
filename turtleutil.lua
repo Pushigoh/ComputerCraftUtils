@@ -4,6 +4,11 @@ function Land()
 	end
 end
 function ChopTree()
+	for i=1, 4 do
+		turtle.dig()
+		turtle.digUp()
+		turtle.up()
+	end
 	while turtle.detectUp() do
 		turtle.dig()
 		turtle.digUp()
