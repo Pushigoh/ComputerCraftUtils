@@ -18,3 +18,4 @@ function FarmCycle(x, y)
 		Move("Right", (x*x+1))
 	end
 end
+FarmCycle(width, height)
