@@ -8,12 +8,9 @@ function ChopTree()
 		turtle.dig()
 		turtle.digUp()
 		turtle.up()
-		a, b = turtle.inspectUp()
-		if b.name ~= "minecraft:oak" and b.name ~= "minecraft:leaves" then
-			Land()
-		end
 	end
-		Land()
+	turtle.dig()
+	Land()
 end
 function Move(direction, amount)
 	print(direction)

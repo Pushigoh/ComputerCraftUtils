@@ -15,7 +15,7 @@ function FarmCycle(x, y)
 		end
 		Move("left", 1)
 		Move("forward", 2)
-		Move("Right", (x*x+1))
+		Move("right", (x*x+1))
 	end
 end
 FarmCycle(width, height)
