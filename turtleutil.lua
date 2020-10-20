@@ -26,6 +26,7 @@ function ChopLeaves()
 		turtle.digUp()
 		turtle.up()
 	end
+	Land()
 end
 function Move(direction, amount)
 	print(direction)
