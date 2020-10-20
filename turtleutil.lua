@@ -21,10 +21,12 @@ function ChopLeaves()
 	for i=1, 4 do
 		turtle.digUp()
 		turtle.up()
+		turtle.dig()
 	end
 	while turtle.detectUp() do
 		turtle.digUp()
 		turtle.up()
+		turtle.dig()
 	end
 	Land()
 end
