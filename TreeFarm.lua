@@ -11,11 +11,14 @@ function FarmCycle(x, y)
 				ChopTree()
 				turtle.place()
 			end
-				Move("left", 2)
+				Move("left", 1)
+				ChopLeaves()
+				Move("left", 1)
+
 		end
 		Move("left", 1)
 		Move("forward", 2)
-		Move("right", (x*x+1))
+		Move("right", (x*2+1))
 	end
 end
 FarmCycle(width, height)

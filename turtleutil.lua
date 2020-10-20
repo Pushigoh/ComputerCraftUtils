@@ -17,6 +17,16 @@ function ChopTree()
 	turtle.dig()
 	Land()
 end
+function ChopLeaves()
+	for i=1, 4 do
+		turtle.digUp()
+		turtle.up()
+	end
+	while turtle.detectUp() do
+		turtle.digUp()
+		turtle.up()
+	end
+end
 function Move(direction, amount)
 	print(direction)
 	print(amount)
