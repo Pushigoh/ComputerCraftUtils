@@ -20,5 +20,11 @@ function FarmCycle(x, y)
 		Move("forward", 2)
 		Move("right", (x*2+1))
 	end
+	Move("back", (x*2+1))
+	for i=2, 16 do
+		turtle.select(i)
+		turtle.dropUp()
+	end
+	turtle.select(1)
 end
 FarmCycle(width, height)
