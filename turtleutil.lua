@@ -8,6 +8,7 @@ function ChopTree()
 		turtle.dig()
 		turtle.digUp()
 		turtle.up()
+		Land()
 	end
 end
 function Move(direction, amount)
